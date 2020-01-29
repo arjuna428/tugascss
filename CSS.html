@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css</title>
+</head>
+<!--LAT 1-->
+<style media="screen">
+    div{
+        width: 80%;
+        margin: 0 auto;
+        height: 100px;
+    }
+    .bgcolor{ background-color: #ff4533;}
+    .bgimage{ background-image: url("juna.jpeg");}
+    .bgposition{
+        height: 350px;
+        background: url("soeharto.jfif") #828282 no-repeat left;
+    }
+    .gradient1{ background:linear-gradient(to right, red, yellow, green);}
+    .gradient2{ background:linear-gradient(red, yellow, green);}
+
+
+/*LAT 2*/
+    body{ background: #247b9e;}
+    div.container{
+        margin: 0 auto;
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        height: 70px;
+        background-color: #820215;
+    }
+    nav{
+        width: 20%;
+        height: 700px;
+        background: #002f42;
+        float: right;
+    }
+    div.content{
+        width: 80%;
+        height: 700px;
+        background: #fff;
+        float: left;
+    }
+    footer{
+        width: 100%;
+        height: 100px;
+        background: #016060;
+        float: left;
+    }
+
+
+    /*LAT 3*/
+    div{
+        width: 100%;
+        height:auto;
+        float: left;
+    }
+    .maroon {color: #820004;}
+    .navy {color: #05004c;}
+    .indigo {color: #5D76CB;}
+    .spacing{ letter-spacing: 2px; word-spacing: 5px; line-height: 20px;}
+    .uppercase{text-transform: uppercase;}
+    .lowercase{text-transform: lowercase;}
+    .capitalize{text-transform: capitalize;}
+    .paragraph{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+    }
+    ul{
+        list-style-type: circle;
+    }
+    li{
+        font-family: monospace;
+        font-size: 15px;
+    }
+
+    /*LAT 4*/
+    .btn-red{padding: 10px; background: #fc0202; color: #fff;}
+    .btn-blue{padding: 10px; background: #02496d; color: #fff;}
+    .btn-green{padding: 10px; background: #338401; color: #fff;}
+    .solid{
+        border-style: solid; border-width: 4px;border-color: #000;
+    }
+    .dotted{
+        border-style: dotted; border-width: 4px;border-color: #000;
+    }
+    .ridge{
+        border-style: ridge; border-width: 4px;
+    }
+    .inset{
+        border-style: inset; border-width: 4px;
+    }
+    .outset{
+        border-style: outset; border-width: 4px;
+    }
+    .round{
+        border-radius: 20px;
+    }
+
+    /*LAT 5*/
+    .anjay{
+        width: 50%;
+        height: 200px;
+        overflow: visible scroll;
+        margin-left: 0 auto;
+    }
+    .static{ position: static; border: 2px solid green;}
+    .relative{
+        position: relative;
+        border: 2px solid red;
+        left: 20px; /* jarak dari posisi paling kiri sebesar 20px*/
+        bottom: 0; /* jarak dari posisi paling bawah sebesar 0px*/
+    }
+    .absol{position: absolute; border: 2px solid blue; left: 20px; top: auto;}
+    .fixed{position: fixed; border: 2px solid black; bottom: 0; right: 0;}
+    .sticky{
+        position: sticky;
+        border: 2px solid yellow;
+        top: 0;
+        left: 20px;
+        background: darkblue;
+        color: white;
+    }
+
+    /*LAT 6*/
+    .menu{margin: 0; width: 100%; position: sticky;}
+        nav{width: 20%; height: 400px; background: #e2e0e0;}
+        ul.horizontal{
+            list-style-type: none;
+            padding:0;
+            margin: 0;
+            overflow: hidden;
+            background-color: #d10202;
+        }
+        ul.horizontal li{float: left;}
+        ul.horizontal a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        ul.horizontal li a:hover{background-color: #6b0101;}
+        ul.vertical{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: #e2e0e0;
+        }
+        ul.vertical li a{
+            display:block;
+            text-decoration: none;
+            color: black;
+            padding: 15px;
+            text-align: left;
+        }
+        ul.vertical li a:hover{
+            background-color: #777777;
+            color: white;
+        }
+
+        /*LAT 7*/
+        div.news{
+            margin: 0 auto;
+            width: 70%;
+            height: 300px;
+            column-count: 2;
+            column-gap: 30px;
+            column-rule-style: solid;
+            column-rule-width: 2px;
+            column-rule-color: #000;
+        }
+
+        /*LAT 8*/
+        div.box{
+            display: inline-block;
+            width: 200px;
+            float: none;
+            border: 2px solid #ddd;
+            margin: 10px;
+        }
+        div.box img{
+            width: 100%;
+            height: 250px;
+        }
+        div.box:hover{
+            border: 3px solid #000;
+        }
+        div.box div.deskripsi{
+            padding:15px;
+            text-align:center;
+        }
+</style>
+
+
+
+<body>
+    <div class="bgcolor">
+        <h1 align="center">background color</h1>
+    </div>
+    <div class="bgimage">
+        <h1 align="center">background image</h1>
+    </div>
+    <div class="bgposition">
+        <h1 align="center">background position</h1>
+    </div>
+    <div class="gradient1">
+        <h1 align="center">gradient background</h1>
+    </div>
+    <div class="gradient2">
+        <h1 align="center">gradient background</h1>
+    </div> 
+
+<br>
+
+    <div class="container">
+        <header>
+            <h1 align="center">web header</h1>
+        </header>
+    <nav>
+        <h1 align="center">navigasi pane</h1>
+    </nav>
+    <div class="content">
+        <h4 align="center">content web</h4>
+    </div>
+    <footer>
+        <h1 align="center">web footer</h1>
+    </footer>
+    </div>
+
+<br>
+<br>
+<br>
+
+    <div>
+        <fieldset>
+            <legend>text color</legend>
+            <p class="maroon">ini warna maroon</p>
+            <p class="navy">ini warna navy</p>
+            <p class="indigo">ini warna indigo</p>
+        </fieldset>
+    
+        <fieldset>
+            <legend>spacing</legend>
+            <p class="spacing">
+                Mesin inline-empat atau mesin straight-four adalah 
+                jenis mesin empat silinder pembakaran inline (lurus) 
+                internal dengan keempat silinder dipasang pada garis lurus, 
+                atau pesawat di sepanjang bak mesin 
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>uppercase</legend>
+            <p class="uppercase">
+                Mesin V4 adalah mesin piston empat silinder di mana silinder 
+                berbagi crankshaft umum dan diatur dalam konfigurasi V.
+                Mesin V4 jauh lebih jarang daripada mesin inline-empat, 
+                namun mesin V4 kadang-kadang digunakan di mobil, 
+                sepeda motor dan aplikasi lainnya.
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>lowercase</legend>
+            <p class="lowercase">
+                Mesin V8 adalah sebuah Mesin V dengan delapan silindernya 
+                dipasang di bak mesin dengan 2 cabang dan masing-masing cabangnya
+                terdiri dari 4 silinder. Antar cabang ini dipasang membentuk sudut
+                istimewa satu sama lain tetapi kadang dipasang dengan sudut lebih
+                lancip. Kedelapan pistonnya menjalankan crankshaft biasa 
+                (sama dengan mesin lainnya).
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>capitalize</legend>
+            <p class="capitalize">
+                Mesin flat (juga dikenal dengan mesin boxer) 
+                adalah sebuah konfigurasi mesin pembakaran dalam 
+                yang pistonnya bergerak secara horizontal. Crankshaftnya
+                ada satu dan silindernya diletakkan di sisi kiri dan kanan,
+                membentuk sudut 180 derajat.
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>font</legend>
+            <p class="paragraph">
+                Ducati merupakan salah satu perushaan produsen
+                sepeda motor terkemuka asal Italia. Mereka adalah
+                salah satu dari 2 pioneer lainnya untuk sepedamotor, 
+                mereka adalah Harley-Davidson dan BMW. Sejak tahun 1970 
+                Ducati selalu memproduksi sepeda motor dengan mesin desmodromic 
+                valve timing L-twin dan rangka trellis.
+                <ul>
+                    <li>align = mengatur text right,left,center</li>
+                    <li>color = mengatur warna text</li>
+                    <li>letter-spacing = mengatur jarak antar karakter</li>
+                    <li>word-spacing = mengatur jarak antar kata</li>
+                </ul>
+                </p>
+        </fieldset>
+        </div>
+
+<br>
+
+        <fieldset>
+            <legend>border style</legend>
+            <p class="btn-red solid"><b>solid</b></p>
+            <p class="btn-blue dotted"><b>dotted</b></p>
+            <p class="btn-green ridge"><b>ridge</b></p>
+            <p class="btn-red inset"><b>inset</b></p>
+            <p class="btn-blue outset"><b>outset</b></p>
+        </fieldset>
+    
+        <fieldset>
+            <legend>round border</legend>
+            <p class="btn-red solid round"><b>solid</b></p>
+            <p class="btn-blue dotted round"><b>dotted</b></p>
+            <p class="btn-green ridge round"><b>ridge</b></p>
+            <p class="btn-red inset round"><b>inset</b></p>
+            <p class="btn-blue outset round"><b>outset</b></p>
+        </fieldset>
+
+<br>
+
+        <div class="anjay">
+            <p class="sticky">
+                posisi sticky
+            </p>
+    
+            <p class="static">
+                <b>posisi static</b><br>
+                test
+                Ducati merupakan salah satu perushaan produsen
+                sepeda motor terkemuka asal Italia. Mereka adalah
+                salah satu dari 2 pioneer lainnya untuk sepedamotor, 
+                mereka adalah Harley-Davidson dan BMW. Sejak tahun 1970 
+                Ducati selalu memproduksi sepeda motor dengan mesin desmodromic 
+                valve timing L-twin dan rangka trellis.
+            </p>
+    
+            <p class="relative">
+                <b>posisi relative</b><br>
+                test
+                posisi sticky
+                Mesin inline-empat atau mesin straight-four adalah 
+                jenis mesin empat silinder pembakaran inline (lurus) 
+                internal dengan keempat silinder dipasang pada garis lurus, 
+                atau pesawat di sepanjang bak mesin 
+            </p>
+    
+            <p class="absol">
+                <b>posisi absolute</b><br>
+                Mesin flat (juga dikenal dengan mesin boxer) 
+                adalah sebuah konfigurasi mesin pembakaran dalam 
+                yang pistonnya bergerak secara horizontal. Crankshaftnya
+                ada satu dan silindernya diletakkan di sisi kiri dan kanan,
+                membentuk sudut 180 derajat.
+            </p>
+    
+            <p class="fixed">
+                posisi fixed
+            </p>
+        </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+        <div class="menu">
+            <ul class="horizontal">
+                <li><a href="#">beranda</a></li>
+                <li><a href="#">profil</a></li>
+                <li><a href="#">kontak</a></li>
+                <li><a href="#">layanan</a></li>
+            </ul>
+        </div>
+    
+        <nav>
+            <ul class="vertical">
+                <li><a href="#">beranda</a></li>            
+                <li><a href="#">profil</a></li> 
+                <li><a href="#">kontak</a></li> 
+                <li><a href="#">layanan</a></li> 
+            </ul>
+        </nav>
+
+
+
+        <div class="news">
+            <p>
+                Mesin flat (juga dikenal dengan mesin boxer) 
+                adalah sebuah konfigurasi mesin pembakaran dalam 
+                yang pistonnya bergerak secara horizontal. Crankshaftnya
+                ada satu dan silindernya diletakkan di sisi kiri dan kanan,
+                membentuk sudut 180 derajat.
+            </p>
+    
+            <p>
+                Mesin inline-empat atau mesin straight-four adalah 
+                jenis mesin empat silinder pembakaran inline (lurus) 
+                internal dengan keempat silinder dipasang pada garis lurus, 
+                atau pesawat di sepanjang bak mesin 
+            </p>
+        </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        <div class="box">
+            <img src="soeharto.jfif">
+            <div class="deskripsi">Soeharto</div>
+        </div>
+    
+        <div class="box">
+            <img src="habibi.jfif">
+            <div class="deskripsi">BJ Habibie</div>
+        </div>
+    
+        <div class="box">
+            <img src="wahid.jfif">
+            <div class deskripsi>KH Abdurrahman Wahid</div>
+        </div>
+    
+        <div class="box">
+            <img src="sby.jfif">
+            <div class="deskripsi">Susilo Bambang Yudhoyono</div>
+        </div>
+    
+        <div class="box">
+            <img src="jokowi.jfif">
+            <div class="deskripsi">Ir H Joko Widodo</div> 
+        </div>
+</body>
+</html>
